@@ -1,0 +1,20 @@
+# Chain removing bias from model output in chain
+DebiasChain is a chain that removes human language bias from model output.
+
+Bias logic taken from a paper showing a comprehensive study of the de-biasing\
+module taken from the dbias package, however this logic is applied holistically\
+rather than at the sentence level.
+
+The DebiasChain identifies biases then corrects for the bias it finds.
+
+Biases defined as follows:
+* Gender bias - e.g. using only male pronouns or stereotyping roles.
+* Age bias - e.g. making assumptions based on someone's age.
+* Racial/ethnic bias - e.g. racist or derogatory language about groups.
+* Disability bias - e.g. use of offensive terms for disabilities.
+* Mental health bias - e.g. equating mental illness with violence.
+* Political bias - e.g. skewed coverage favoring liberal/conservative views.
+* Religious bias - e.g. intolerant language about religious groups.
+* Educational bias - e.g. assumptions based on education level.
+* Language bias - e.g. discrimination against non-native speakers.
+
